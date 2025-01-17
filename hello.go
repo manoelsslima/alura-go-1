@@ -13,14 +13,14 @@ func main() {
 	fmt.Scanf("%d", &opcao)
 	fmt.Println("A opção escolhida foi", opcao)
 
-	if opcao == 1 {
+	switch opcao {
+	case 1:
 		fmt.Println("Iniciando...")
-	} else if opcao == 2 {
+	case 2:
 		fmt.Println("Executando ação...")
-	} else if opcao == 9 {
+	case 9:
 		fmt.Println("Saindo...")
-	} else {
+	default:
 		fmt.Println("Opção inválida!")
 	}
-
 }
